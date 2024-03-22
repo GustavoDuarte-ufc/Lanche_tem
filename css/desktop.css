@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --cor: rgb(18, 96, 122);
+    --cor1: #5CE1E6;
+}
 *{
     padding: 0;
     margin: 0;
@@ -13,49 +17,89 @@ body{
 
 /*CABECALHO*/
 .cabecalho{
-    background: rgb(255, 255, 255);
-    height: 2rem;
+    background: var(--cor);
+    height: 0.7rem;
     width: 100hv;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 1rem;
+}
+
+.cabecalho:hover{
+    box-shadow: 1px 1px 7px var(--cor1);
 }
 
 .lista_redes .redes_sociais{
     display: flex;
     list-style: none;
     gap: 0.5rem;
+    padding-top: 0.3rem;
 }
 
 .redes_sociais .logo_redes img{
     height: 1.4rem;
     width: 1.4rem;
-    padding-top: 0.7rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.redes_sociais .logo_redes img:hover{
+    box-shadow: 1px 1px 7px var(--cor1);
+}
+
+.logo_lanchetem{
+    margin-left: 3.5rem;
+    height: 2.4rem;
+    width: 3.7rem;
+    border: none;
+    border-radius: 60%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_lanchetem:hover{
+    box-shadow: 1px 1px 7px var(--cor1);
 }
 
 .logo_lanchetem .img_logo{
-    height: 4rem;
-    width: 4rem;
-    padding-top: 1.3rem;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0.2rem;
+    
 }
 
 .navegacao .lista_nav{
+    color: white;
     display: flex;
     list-style: none;
     gap: 0.8rem;
     font-size: 0.7rem;
-    padding-top: 0.3rem;
     padding-right: 1rem;
+    font-weight: 500;
+    
+}
+
+.lista_nav .lista_style{
+    cursor: pointer;
 }
 
 
 /*CORPO*/
 
 .corpo{
-    padding: 3rem;
+    padding: 1.5rem;
+    gap: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.corpo .empresa{
+    position: relative;
+    top: 1rem;
 }
 
 .empresa img{
@@ -63,14 +107,67 @@ body{
     width: 16rem;
     border: none;
     border-radius: 10%;
+    box-shadow: 1px 1px 6px rgb(207, 207, 209);
+    cursor: none;
 }
 
-.org .perfil{
-    list-style: none;
+.org{
+    position: relative;
+    top: 1rem;
+    align-items: center;
+    display: block;
 }
-.org .perfil .bloco2{
-    height: 4rem;
-    width: 7rem;
-    background: red;
-    padding-top: 10rem;
+
+.org .texto{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 1.5rem;
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    font-weight: 600;
+    padding: 0.3rem;
 }
+
+.texto1:hover{
+    box-shadow: 1px 1px 6px var(--cor);
+    cursor: none;
+}
+
+.texto:hover{
+    box-shadow: 1px 1px 6px var(--cor1);
+    cursor: none;
+}
+
+.org .texto1{
+    font-size: 0.6rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--cor);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+/* Menu*/
+.cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor1);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.cardapio .comida{
+    height: 8rem;
+    width: 11rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
