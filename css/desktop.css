@@ -18,7 +18,7 @@ body{
 /*CABECALHO*/
 .cabecalho{
     background: var(--cor);
-    height: 0.7rem;
+    height: 2rem;
     width: 100hv;
     display: flex;
     align-items: center;
@@ -38,8 +38,8 @@ body{
 }
 
 .redes_sociais .logo_redes img{
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.8rem;
+    width: 1.8rem;
     cursor: pointer;
     border-radius: 1rem;
 }
@@ -50,8 +50,8 @@ body{
 
 .logo_lanchetem{
     margin-left: 3.5rem;
-    height: 2.4rem;
-    width: 3.7rem;
+    height: 3.3rem;
+    width: 5rem;
     border: none;
     border-radius: 60%;
     background-color: white;
@@ -65,8 +65,8 @@ body{
 }
 
 .logo_lanchetem .img_logo{
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     margin-top: 0.2rem;
     
 }
@@ -76,10 +76,9 @@ body{
     display: flex;
     list-style: none;
     gap: 0.8rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding-right: 1rem;
     font-weight: 500;
-    
 }
 
 .lista_nav .lista_style{
@@ -93,36 +92,21 @@ body{
     padding: 1.5rem;
     gap: 2rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-}
-
-.corpo .empresa{
-    position: relative;
-    top: 1rem;
 }
 
 .empresa img{
-    height: 14rem;
-    width: 16rem;
+    height: 24rem;
+    width: 27rem;
     border: none;
     border-radius: 10%;
     box-shadow: 1px 1px 6px rgb(207, 207, 209);
-    cursor: none;
-}
-
-.org{
-    position: relative;
-    top: 1rem;
-    align-items: center;
-    display: block;
 }
 
 .org .texto{
     margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
-    height: 1.5rem;
     background-color: var(--cor1);
     color: white;
     border: none;
@@ -135,16 +119,14 @@ body{
 
 .texto1:hover{
     box-shadow: 1px 1px 6px var(--cor);
-    cursor: none;
 }
 
 .texto:hover{
     box-shadow: 1px 1px 6px var(--cor1);
-    cursor: none;
 }
 
 .org .texto1{
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -159,15 +141,67 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
     background-color: var(--cor1);
     margin: 2rem;
     border-radius: 1rem;
+    padding: 2rem;
 }
 .cardapio .comida{
-    height: 8rem;
-    width: 11rem;
-    padding: 0.4rem;
+    height: 18rem;
+    width: 21rem;
+    border-radius: 2rem;
+}
+
+.txt-menu{
+    width: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-menu{
+    background: var(--cor1);
+    width: 14rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
     border-radius: 1rem;
 }
+
+.menu-texto{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--cor);
+}
+
+.menu-itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.menu-itens .valor{
+    display: none;
+}
+
+.menu-itens:hover{
+    position: relative;
+    left: 0.2rem;
+    bottom: 0.2rem;
+}
+
+.menu-itens:hover .valor{
+    display: flex;
+}
+
+.menu-itens:hover .val{
+    display: none;
+}
+
+
 
