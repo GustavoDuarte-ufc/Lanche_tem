@@ -19,7 +19,7 @@ body{
 .cabecalho{
     background: var(--cor);
     height: 2rem;
-    width: 100hv;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
